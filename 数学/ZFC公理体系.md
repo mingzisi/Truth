@@ -31,17 +31,17 @@ ZFC的9条公理，本质上就是在规定"什么样的集合存在"。有了�
 所以需要先让空集存在：
 
 $$
-\exists A,\, \forall x,\; x \notin A
+\exists A, \forall x, x \notin A
 $$
 
-存在一个没有任何元素的集合，这个 $A$ 叫空集，记作$\varnothing$。
+存在一个没有任何元素的集合，这个 $A$ 叫空集，记作 $\varnothing$。
 
 ## 外延公理
 
 为什么空集是唯一的？我们需要一种方法来判断集合是否相同。
 
 $$
-\forall A,\forall B,\; [\forall x,\,(x \in A \Leftrightarrow x \in B)] \Rightarrow A = B
+\forall A,\forall B, [\forall x,\,(x \in A \Leftrightarrow x \in B)] \Rightarrow A = B
 $$
 
 两个集合相等，当且仅当它们拥有完全相同的元素。
@@ -51,7 +51,7 @@ $$
 那么，怎么构造新的集合？
 
 $$
-\forall A,\forall B,\exists C,\forall x,\; [x \in C \Leftrightarrow (x = A \lor x = B)]
+\forall A,\forall B,\exists C,\forall x, [x \in C \Leftrightarrow (x = A \lor x = B)]
 $$
 
 对于任意两个集合 $A$ 和 $B$，存在一个集合 $\{A,B\}$，它恰好包含 $A$ 和 $B$ 作为元素。
@@ -68,19 +68,19 @@ $$
 配对公理只能构造两个元素的集合。如果需要有更多元素的集合呢？
 
 $$
-\forall A,\exists B,\forall x,\; [x \in B \Leftrightarrow \exists X,\,(X \in A \land x \in X)]
+\forall A,\exists B,\forall x, [x \in B \Leftrightarrow \exists X,\,(X \in A \land x \in X)]
 $$
 
 对于任意集合 $A$，存在一个集合 $B$，包含 $A$ 中所有元素的所有元素。
 
 这样，我们就可以构造有2个以上元素的有限集合了：
 
-- 假设我们需要一个包含$a$、$b$、$c$的集合
-- 用配对公理可以得到$\{a,b\}$和$\{c\}$
-- 再用一次，得到$\{\{a,b\},\{c\}\}$
-- 由并集公理可得$\{a,b,c\}$存在
+- 假设我们需要一个包含 $a$ 、 $b$ 、 $c$ 的集合
+- 用配对公理可以得到 $\{a,b\}$ 和 $\{c\}$
+- 再用一次，得到 $\{\{a,b\},\{c\}\}$
+- 由并集公理可得 $\{a,b,c\}$ 存在
 
-为了方便表示，数学家发明了并集符号“$\cup$”。$A \cup B$表示$A$和$B$的所有元素组成的集合。
+为了方便表示，数学家发明了并集符号“ $\cup$ ”。 $A \cup B$ 表示 $A$ 和 $B$ 的所有元素组成的集合。
 
 现在，(应该)可以开始[构造数](./数和代数结构.md)了。当然，你也可以继续往下看。 
 ## 分离公理模式
@@ -95,17 +95,17 @@ $$
 
 假设有一条公理说，可以存在一个集合 $A$，使得$A \in A$。
 
-定义一个性质$P$：
+定义一个性质 $P$ ：
 
-- 空集有性质$P$
-- 如果某个集合的所有元素都有性质$P$，那么该集合也有性质$P$
+- 空集有性质 $P$
+- 如果某个集合的所有元素都有性质 $P$ ，那么该集合也有性质 $P$
 
 但是，如果 $A \in A$，当我们要证明 $A$ 有性质 $P$ 时，前提是"它的元素都有性质 $P$"，而它的元素正好是它自己。于是为了证明 $A$ 有 $P$，需要先证明 $A$ 有 $P$。
 
 所以这样的集合不能存在。需要一种方法限制集合的构造方式。
 
 $$
-\forall A,\exists B,\forall x,\; [x \in B \Leftrightarrow (x \in A \land \varphi(x))]
+\forall A,\exists B,\forall x, [x \in B \Leftrightarrow (x \in A \land \varphi(x))]
 $$
 
 只能从已经存在的集合挑出一些元素组成新集合，不能**凭空创造**集合。  
