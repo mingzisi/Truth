@@ -58,9 +58,9 @@ $$
 
 有了配对公理，我们可以构造非空集合：
 
-- 空集存在：$\varnothing$
+- 空集存在： $\varnothing$
 - 配对公理取 $A=\varnothing,\ B=\varnothing$，得到 $\{\varnothing\}$
-- 继续构造，可以得到 $\{\varnothing,\{\varnothing\}\}$、$\{\varnothing,\{\varnothing\},\{\varnothing,\{\varnothing\}\}\}$……
+- 继续构造，可以得到 $\{\varnothing,\{\varnothing\}\}$ 、 $\{\varnothing,\{\varnothing\},\{\varnothing,\{\varnothing\}\}\}$ ……
 
 这样我们就有了**无穷多个不同的集合**。
 
@@ -93,7 +93,7 @@ $$
 
 **如果它存在，会发生什么？**
 
-假设有一条公理说，可以存在一个集合 $A$，使得$A \in A$。
+假设有一条公理说，可以存在一个集合 $A$，使得 $A \in A$ 。
 
 定义一个性质 $P$ ：
 
