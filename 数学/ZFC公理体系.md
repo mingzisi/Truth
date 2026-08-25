@@ -41,7 +41,7 @@ $$
 为什么空集是唯一的？我们需要一种方法来判断集合是否相同。
 
 $$
-\forall A,\forall B, [\forall x,\,(x \in A \Leftrightarrow x \in B)] \Rightarrow A = B
+\forall A,\forall B, [\forall x,  (x \in A \Leftrightarrow x \in B)] \Rightarrow A = B
 $$
 
 两个集合相等，当且仅当它们拥有完全相同的元素。
@@ -59,8 +59,8 @@ $$
 有了配对公理，我们可以构造非空集合：
 
 - 空集存在： $\varnothing$
-- 配对公理取 $A=\varnothing,\ B=\varnothing$，得到 $\{\varnothing\}$
-- 继续构造，可以得到 $\{\varnothing,\{\varnothing\}\}$ 、 $\{\varnothing,\{\varnothing\},\{\varnothing,\{\varnothing\}\}\}$ ……
+- 配对公理取 $A=\varnothing,\ B=\varnothing$，得到 $\{ \varnothing \}$
+- 继续构造，可以得到 $\{ \varnothing, \{ \ varnothing \} \}$ 、 $\{ \varnothing, \{ \varnothing \}, \{ \varnothing, \{ \varnothing \} \} \}$ ……
 
 这样我们就有了**无穷多个不同的集合**。
 
@@ -68,7 +68,7 @@ $$
 配对公理只能构造两个元素的集合。如果需要有更多元素的集合呢？
 
 $$
-\forall A,\exists B,\forall x, [x \in B \Leftrightarrow \exists X,\,(X \in A \land x \in X)]
+\forall A,\exists B,\forall x, [x \in B \Leftrightarrow \exists X,  (X \in A \land x \in X)]
 $$
 
 对于任意集合 $A$，存在一个集合 $B$，包含 $A$ 中所有元素的所有元素。
@@ -88,7 +88,7 @@ $$
 来看这个集合：
 
 $$
-A = \{A\}
+A = \{ A \}
 $$
 
 **如果它存在，会发生什么？**
