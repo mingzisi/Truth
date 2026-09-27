@@ -60,7 +60,7 @@ $$
 
 - 空集存在： $\varnothing$
 - 配对公理取 $A=\varnothing,\ B=\varnothing$，得到 $\{ \varnothing \}$
-- 继续构造，可以得到 $\{ \varnothing, \{ \ varnothing \} \}$ 、 $\{ \varnothing, \{ \varnothing \}, \{ \varnothing, \{ \varnothing \} \} \}$ ……
+- 继续构造，可以得到 $\{ \varnothing , \{ \varnothing \} \}$ 、 $\{ \varnothing, \{ \varnothing \}, \{ \varnothing, \{ \varnothing \} \} \}$ ……
 
 这样我们就有了**无穷多个不同的集合**。
 
@@ -87,6 +87,7 @@ $$
 $$
 \forall A,\exists B,\forall x, [x \in B \Leftrightarrow (x \in A \land P(x))]
 $$
+
 对任意集合 $A$ 和性质 $P$，存在一个集合 $B$，它只含有 $A$ 中满足 $P$ 的元素。
 ### 为什么是模式
 在一阶逻辑里，我们不能对“性质”或“集合”做量化（不能写“对于所有性质 $P$”），只能对变元量化。这里的“性质 P”可以是任意一个公式，每一个公式都可以得到一条公理。所以这是无穷多条公理组成的一个**模式**。
